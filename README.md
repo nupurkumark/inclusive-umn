@@ -1,44 +1,12 @@
-# Inclusive UMN Dashboard
+# React + Vite
 
-The Inclusive UMN Dashboard is a prototype web application designed to catalog and display physical accessibility barriers across the University of Minnesota (UMN) campus. The goal is to create a user-friendly, accessible platform for the UMN community to identify and report accessibility issues in campus facilities.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
-- **Interactive Dashboard**: Displays a table of accessibility barriers with filters based on building selection
-- **Building Search**: Search for barriers by building via dropdown
-- **Add New Issues**: Users can submit new accessibility barriers, specifying the building, type of issue, and description.
-- **Database Integration**: Uses SQLite for data storage and retrieval, pre-populated with data from a CSV file
+Currently, two official plugins are available:
 
-## Technologies Used
-- **Python**: Core programming language
-- **Dash**: Creating the interactive dashboard
-- **SQLite**: Database creation
-- **Pandas**: Data manipulation and CSV parsing 
-- **HTML/CSS**: Styling UI
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Installation
+## Expanding the ESLint configuration
 
-### Prerequisites
-- Python 3.7 or higher
-- Python dependencies: Pandas, Dash, and SQLite
-    ```bash
-    pip install dash pandas sqlite3
-    ```
-
-### Setup Instructions
-1. Clone this repository
-
-2. Run the application:
-    ```bash
-    python app.py
-    ```
-
-3. Open the application in your web browser at `http://127.0.0.1:8050`.
-
-## Project Limitations
-- The current prototype focuses on physical barriers affecting mobility, visual, and auditory disabilities
-- The application is designed to be accessed via a desktop browser and is not fully optimized for mobile devices
-
----
-
-We hope this dashboard serves as a meaningful step toward improving accessibility on campus!
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
